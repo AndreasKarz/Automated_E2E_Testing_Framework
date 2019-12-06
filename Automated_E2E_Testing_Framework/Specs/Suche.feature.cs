@@ -22,7 +22,6 @@ namespace Automated_E2E_Testing_Workshop.Specs
     [NUnit.Framework.TestFixtureAttribute()]
     [NUnit.Framework.DescriptionAttribute("Suchservice auf der Homepage")]
     [NUnit.Framework.CategoryAttribute("base")]
-    [NUnit.Framework.CategoryAttribute("hourly")]
     [NUnit.Framework.CategoryAttribute("search")]
     public partial class SuchserviceAufDerHomepageFeature
     {
@@ -31,7 +30,6 @@ namespace Automated_E2E_Testing_Workshop.Specs
         
         private string[] _featureTags = new string[] {
                 "base",
-                "hourly",
                 "search"};
         
 #line 1 "Suche.feature"
@@ -44,7 +42,6 @@ namespace Automated_E2E_Testing_Workshop.Specs
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("de-DE"), "Suchservice auf der Homepage", "\tUm \r\n\t\tInformationen zu verschiedenen Versicherungsthemen zu erhalten\r\n\tAls \r\n\t\t" +
                     "Kunde benutze ich die Suche\r\n\tIch\r\n\t\tfinde die gewünschten Informationen", ProgrammingLanguage.CSharp, new string[] {
                         "base",
-                        "hourly",
                         "search"});
             testRunner.OnFeatureStart(featureInfo);
         }
