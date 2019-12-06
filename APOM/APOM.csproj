@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FunkyBDD.SxS.Selenium.APOM" Version="1.0.1" />
+    <PackageReference Include="FunkyBDD.SxS.Selenium.WebDriver" Version="1.0.2" />
+    <PackageReference Include="FunkyBDD.SxS.Selenium.WebElement" Version="2.0.1" />
+    <PackageReference Include="Selenium.Support" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+  </ItemGroup>
+
+</Project>
