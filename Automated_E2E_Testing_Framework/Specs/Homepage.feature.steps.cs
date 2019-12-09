@@ -16,6 +16,18 @@ namespace Automated_E2E_Testing_Workshop.Specs
             homepage = new Homepage(Hooks.Page.Driver);
         }
 
+        [When(@"I select the QuickLink '(.*)'")]
+        public void WhenISelectTheQuickLink(string quickLink)
+        {
+            homepage.QuickLinks.Select(quickLink);
+        }
+
+        [Then(@"Sollte der Titel '(.*)' sein")]
+        public void ThenSollteDieURLSein(string title)
+        {
+            Assert.AreEqual(title, Hooks.Driver.Title);
+        }
+
         [Then(@"the disclaimer should be shown")]
         public void ThenTheDisclaimerShouldBeShown()
         {

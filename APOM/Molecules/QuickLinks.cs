@@ -36,5 +36,10 @@ namespace APOM.Molecules
             Component = parent.FindElementFirstOrDefault(By.XPath($".//*[@data-test-id='{dataTestId}']"));
             initComponent();
         }
+
+        public void Select(string link)
+        {
+            linkList[link].Click();
+        }
     }
 }

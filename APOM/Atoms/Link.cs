@@ -33,7 +33,6 @@ namespace APOM.Atoms
 
         public void Click()
         {
-            Component.ScrollTo();
             Component.Click(); 
         }
 

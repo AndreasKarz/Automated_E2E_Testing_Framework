@@ -27,3 +27,10 @@ Scenario: Confirm the Cookie Disclaimer
 	Then the disclaimer should be shown
 	When I confirm the disclaimer
 	Then the disclaimer should be away
+
+@quicklink
+Scenario: Test the QuickLink
+	When I change the language to 'DE'
+		And I confirm the disclaimer
+		And I select the QuickLink 'Hypothekarzinsen'
+	Then Sollte der Titel 'Aktuelle Hypothekarzinssätze - Festhypothek, Libor-Hypothek, variable Hypothek | Swiss Life' sein
