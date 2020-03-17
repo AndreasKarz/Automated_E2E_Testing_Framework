@@ -89,6 +89,7 @@ namespace Automated_E2E_Testing_Workshop.Specs
         
         [NUnit.Framework.DescriptionAttribute("Check the language navigation")]
         [NUnit.Framework.CategoryAttribute("language")]
+        [NUnit.Framework.CategoryAttribute("quarter")]
         [NUnit.Framework.TestCaseAttribute("DE", "Informationen zu Cookies", "Swiss Life möchte Ihnen stets den bestmöglichen Service bieten. Damit Sie unsere " +
             "Website optimal nutzen und wir diese fortlaufend verbessern können, verwenden wi" +
             "r Cookies. Durch die weitere Nutzung der Website stimmen Sie der Verwendung von " +
@@ -101,7 +102,8 @@ namespace Automated_E2E_Testing_Workshop.Specs
         public virtual void CheckTheLanguageNavigation(string lang, string title, string text, string linktext, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "language"};
+                    "language",
+                    "quarter"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));

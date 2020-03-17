@@ -10,7 +10,7 @@ Feature: Homepage base functionalities
 Background: Open the Homepage
 	Given I open the Homepage
 
-@language
+@language @quarter
 Scenario Outline: Check the language navigation
 	When I change the language to '<lang>'
 	Then the disclaimer should be shown
