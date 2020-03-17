@@ -19,8 +19,9 @@ namespace Automated_E2E_Testing_Workshop.Specs
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Homepage base functionalities")]
+    [NUnit.Framework.TestFixtureAttribute(TestName="Homepage base functionalities")]
+    [NUnit.Framework.DescriptionAttribute("\tIn order to \r\n\t\tavoid silly mistakes\r\n\tAs a \r\n\t\tmath idiot\r\n\tI want to \r\n\t\tbe to" +
+        "ld the sum of two numbers")]
     [NUnit.Framework.CategoryAttribute("base")]
     public partial class HomepageBaseFunctionalitiesFeature
     {
@@ -86,18 +87,17 @@ namespace Automated_E2E_Testing_Workshop.Specs
 #line hidden
         }
         
-        [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Check the language navigation")]
         [NUnit.Framework.CategoryAttribute("language")]
         [NUnit.Framework.TestCaseAttribute("DE", "Informationen zu Cookies", "Swiss Life möchte Ihnen stets den bestmöglichen Service bieten. Damit Sie unsere " +
             "Website optimal nutzen und wir diese fortlaufend verbessern können, verwenden wi" +
             "r Cookies. Durch die weitere Nutzung der Website stimmen Sie der Verwendung von " +
-            "Cookies zu.", "Weitere Informationen zum Datenschutz", null)]
+            "Cookies zu.", "Weitere Informationen zum Datenschutz", null, TestName=@"Check the language navigation(DE,Informationen zu Cookies,Swiss Life möchte Ihnen stets den bestmöglichen Service bieten. Damit Sie unsere Website optimal nutzen und wir diese fortlaufend verbessern können, verwenden wir Cookies. Durch die weitere Nutzung der Website stimmen Sie der Verwendung von Cookies zu.,Weitere Informationen zum Datenschutz)")]
         [NUnit.Framework.TestCaseAttribute("EN", "", "Swiss Life strives to always offer the best-possible service. We use cookies on o" +
             "ur website to enhance your experience and make ongoing improvements. By continui" +
-            "ng to browse the site, you are agreeing to our use of cookies.", "Privacy policy", null)]
-        [NUnit.Framework.TestCaseAttribute("FR", "", @"Swiss Life tient à vous offrir le meilleur service possible en tout temps. Afin que vous puissiez faire un usage optimal de notre site Web et que nous puissions continuellement l’améliorer, nous utilisons des cookies. En continuant à utiliser le site Web, vous consentez à l’usage de cookies.", "Déclaration relative à la protection des données", null)]
-        [NUnit.Framework.TestCaseAttribute("IT", "", @"Swiss Life desidera offrirle sempre il servizio migliore in assoluto. Ci avvaliamo di cookie per garantirle un’esperienza ottimale del nostro sito web e per migliorarlo costantemente. Continuando a utilizzare il nostro sito web, lei esprime il suo consenso all’uso dei cookie.", "Dichiarazione sulla protezione dei dati", null)]
+            "ng to browse the site, you are agreeing to our use of cookies.", "Privacy policy", null, TestName=@"Check the language navigation(EN,,Swiss Life strives to always offer the best-possible service. We use cookies on our website to enhance your experience and make ongoing improvements. By continuing to browse the site, you are agreeing to our use of cookies.,Privacy policy)")]
+        [NUnit.Framework.TestCaseAttribute("FR", "", @"Swiss Life tient à vous offrir le meilleur service possible en tout temps. Afin que vous puissiez faire un usage optimal de notre site Web et que nous puissions continuellement l’améliorer, nous utilisons des cookies. En continuant à utiliser le site Web, vous consentez à l’usage de cookies.", "Déclaration relative à la protection des données", null, TestName=@"Check the language navigation(FR,,Swiss Life tient à vous offrir le meilleur service possible en tout temps. Afin que vous puissiez faire un usage optimal de notre site Web et que nous puissions continuellement l’améliorer, nous utilisons des cookies. En continuant à utiliser le site Web, vous consentez à l’usage de cookies.,Déclaration relative à la protection des données)")]
+        [NUnit.Framework.TestCaseAttribute("IT", "", @"Swiss Life desidera offrirle sempre il servizio migliore in assoluto. Ci avvaliamo di cookie per garantirle un’esperienza ottimale del nostro sito web e per migliorarlo costantemente. Continuando a utilizzare il nostro sito web, lei esprime il suo consenso all’uso dei cookie.", "Dichiarazione sulla protezione dei dati", null, TestName=@"Check the language navigation(IT,,Swiss Life desidera offrirle sempre il servizio migliore in assoluto. Ci avvaliamo di cookie per garantirle un’esperienza ottimale del nostro sito web e per migliorarlo costantemente. Continuando a utilizzare il nostro sito web, lei esprime il suo consenso all’uso dei cookie.,Dichiarazione sulla protezione dei dati)")]
         public virtual void CheckTheLanguageNavigation(string lang, string title, string text, string linktext, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -144,7 +144,7 @@ this.FeatureBackground();
             this.ScenarioCleanup();
         }
         
-        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.TestCaseAttribute(TestName="Confirm the Cookie Disclaimer")]
         [NUnit.Framework.DescriptionAttribute("Confirm the Cookie Disclaimer")]
         [NUnit.Framework.CategoryAttribute("disclaimer")]
         public virtual void ConfirmTheCookieDisclaimer()
@@ -189,7 +189,7 @@ this.FeatureBackground();
             this.ScenarioCleanup();
         }
         
-        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.TestCaseAttribute(TestName="Test the QuickLink")]
         [NUnit.Framework.DescriptionAttribute("Test the QuickLink")]
         [NUnit.Framework.CategoryAttribute("quicklink")]
         public virtual void TestTheQuickLink()

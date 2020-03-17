@@ -6,6 +6,7 @@ using System;
 using System.Linq;
 using TechTalk.SpecFlow;
 using APOM.Pages;
+using System.Threading;
 
 namespace Automated_E2E_Testing_Workshop
 {
@@ -76,7 +77,15 @@ namespace Automated_E2E_Testing_Workshop
         [When(@"I confirm the disclaimer"), When(@"Ich den Disclaimer bestätige")]
         public void WennIchDenDisclaimerBestatige()
         {
-            Page.AcceptCookieDisclaimer();
+            try
+            {
+                Page.AcceptCookieDisclaimer();
+                Thread.Sleep(1000);
+            }
+            catch (Exception)
+            {
+                //
+            }
         }
 
         #region After methods

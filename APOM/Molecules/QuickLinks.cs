@@ -15,7 +15,15 @@ namespace APOM.Molecules
             foreach (var element in Component.FindElementsOrDefault(By.ClassName("m-link-list__item")))
             {
                 var link = new Link(element);
-                linkList.Add(link.Text, link);
+                try
+                {
+                    linkList.Add(link.Text, link);
+                }
+                catch (System.Exception)
+                {
+                    //
+                }
+                
             }
         }
 

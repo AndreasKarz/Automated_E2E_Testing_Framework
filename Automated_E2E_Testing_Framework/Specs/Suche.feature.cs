@@ -19,8 +19,9 @@ namespace Automated_E2E_Testing_Workshop.Specs
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Suchservice auf der Homepage")]
+    [NUnit.Framework.TestFixtureAttribute(TestName="Suchservice auf der Homepage")]
+    [NUnit.Framework.DescriptionAttribute("\tUm \r\n\t\tInformationen zu verschiedenen Versicherungsthemen zu erhalten\r\n\tAls \r\n\t\t" +
+        "Kunde benutze ich die Suche\r\n\tIch\r\n\t\tfinde die gewünschten Informationen")]
     [NUnit.Framework.CategoryAttribute("base")]
     [NUnit.Framework.CategoryAttribute("search")]
     public partial class SuchserviceAufDerHomepageFeature
@@ -92,11 +93,10 @@ namespace Automated_E2E_Testing_Workshop.Specs
 #line hidden
         }
         
-        [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Die Suche nach Vorsorge liefert die gewünschten Informationen")]
-        [NUnit.Framework.TestCaseAttribute("Vorsorge", "400", null)]
-        [NUnit.Framework.TestCaseAttribute("Invest", "80", null)]
-        [NUnit.Framework.TestCaseAttribute("3a", "100", null)]
+        [NUnit.Framework.TestCaseAttribute("Vorsorge", "400", null, TestName="Die Suche nach Vorsorge liefert die gewünschten Informationen(Vorsorge,400)")]
+        [NUnit.Framework.TestCaseAttribute("Invest", "80", null, TestName="Die Suche nach Vorsorge liefert die gewünschten Informationen(Invest,80)")]
+        [NUnit.Framework.TestCaseAttribute("3a", "100", null, TestName="Die Suche nach Vorsorge liefert die gewünschten Informationen(3a,100)")]
         public virtual void DieSucheNachVorsorgeLiefertDieGewunschtenInformationen(string suchbegriff, string anzahl, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
@@ -134,7 +134,7 @@ this.FeatureBackground();
             this.ScenarioCleanup();
         }
         
-        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.TestCaseAttribute(TestName="Suche ohne Resultate")]
         [NUnit.Framework.DescriptionAttribute("Suche ohne Resultate")]
         public virtual void SucheOhneResultate()
         {
